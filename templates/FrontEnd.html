@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Grade Predictive Management System</title>
+{#<script>#}
+{#function myFunction() {#}
+{#document.getElementById("demo").innerHTML = "Paragraph changed.";#}
+{##}
+{##}
+{#alert("Hello! I am an alert box!!");#}
+{##}
+{#function show_value2(x) {#  slider javascript #}
+{#{#}
+{#document.getElementById("slider_value2").innerHTML=x;#}
+{##}
+{##}
+{#function add_one()#}
+{#{#}
+{#document.f.sld6.value=parseInt(document.f.sld6.value)+1;#}
+{#show_value2(document.f.sld6.value);#}
+{#function subtract_one()#}
+{#{#}
+{#document.f.sld6.value=parseInt(document.f.sld6.value)-1;#}
+{#show_value2(document.f.sld6.value);#}
+{#</script>#}
+{#<style>#}
+{##}
+{#.text-center{#}
+{##}
+{#    background-color: aqua;#}
+{#    width: 50%;#}
+{#</style>#}
+</head>
+<body>
+
+{#<h2>Demo JavaScript in Head</h2>#}
+{##}
+{#<p id="demo">A Paragraph</p>#}
+{#<button type="button" onclick="myFunction()">Try it</button>#}
+<form action = "yogesh", method = "post"> {# on submit moves to the page #}
+    <div><center><h1>Student Grade Predictive Management System</h1>
+    <h3> Performance of the students Tasks</h3 >
+<label for ="inp" > <b > Task Selection :  </b > </label > {# asking input #}
+<select name = "Input" id = "inp" > <!Creating Dropdown for Task name">
+<option value = "Assignment 1" > Assignment 1 </option >
+    <option value = "Assignment 2" > Assignment 2 </option >
+    <option value = "Assignment 3" > Assignment 3 </option >
+    <option value = "Assignment 4" > Assignment 4 </option >
+    <option value = "Midsem" > 	Midsem </option >
+    <option value = "Endsem Exam" > Endsem Exam </option >
+    <option value = "Project" > Project </option >
+    <option value = "Total(Scaled)" > Total </option >
+    <option value = "CGPA" > CGPA </option >
+</select>
+{#<label for ="task" > <b > Task Selection :  </b > </label >#}
+{#<select name = "task" id = "task" > <!Creating Dropdown for Task no.">#}
+{#<option value = 1 > 1 </option >#}
+{#<option value = 2 > 2 </option >#}
+{#</select>#}
+{#        <label for ="myRange" > <b > Guess Quiz :  </b > </label >#}
+{#        <input type="range" min="1" max="100" value="50" name ="myRange"/>#}
+{#<div  ><span style="border: 2px solid black" id="slider_value2" style="color:red;font-weight:bold;"></span></div><br>#}
+{#        <label for ="sld6" > <b > Guess Quiz :  </b > </label >#}
+{##}
+{#    <input type="button" value="-" onClick="subtract_one()">#}
+{#0 <input type="range" min="0" max="1000" step="1" name="sld6" value=477" onchange="show_value2(this.value)"> 1,000#}
+{#<input type="button" value="+" onClick="add_one()" >#}
+    <br><br>
+        <div  > <input class ="text-center" type="submit" value="submit"/> </div></center></div>
+</form>
+
+</body>
+<style>
+    body{
+    background-image: url("https://static.businessworld.in/article/article_extra_large_image/1558014721_E7jyWs_iiit_d.jpg");
+        background-repeat: no-repeat;
+        {#background-position: center;#}
+        background-size: cover;
+    }
+</style>
+
+
+<body>
+<br><br>
+ <img style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  " src="data:image/png;base64, {{ plot_url }}">
+
+</body>
+</html>

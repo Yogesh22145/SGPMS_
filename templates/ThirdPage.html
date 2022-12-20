@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    div{
+        margin-bottom: 10px;
+    }
+    label{
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+    }
+</style>
+</head>
+<body>
+<form action = "predict_efforts", method = "post"> {# on submit moves to the page #}
+    <br><br><br><br><br><br>
+
+    <div><center>
+        <h1>Student Grade Predictive Management System</h1>
+        <h3>Enter Expected CGPA, Received Efforts and Predict Remaining Efforts</h3>
+        <label for="CGPA">Expected CGPA : </label>
+          <input type="text" id="CGPA" name="CGPA"><br><br>
+        <label for="assignment1">Assignment 1 Efforts (100) :</label>
+          <input type="text" id="assignment1" name="assignment1"><br><br>
+        <label for="assignment2">Assignment 2 Efforts (100):</label>
+          <input type="text" id="assignment2" name="assignment2"><br><br>
+        <label for="assignment3">Assignment 3 Efforts (100):</label>
+          <input type="text" id="assignment3" name="assignment3"><br><br>
+        <label for="assignment4">Assignment 4 Efforts (100):</label>
+          <input type="text" id="assignment4" name="assignment4"><br><br>
+        <label for="project">Project Efforts (100):</label>
+          <input type="text" id="project" name="project"><br><br>
+        <label for="mid_sem">mid_sem Efforts (40):</label>
+          <input type="text" id="mid_sem" name="mid_sem"><br><br>
+        <label for="end_sem">end_sem Efforts (100):</label>
+          <input type="text" id="end_sem" name="end_sem"><br><br>
+        <input type="submit" value="Submit">
+        </center>
+       </div>
+</form>
+<style>
+    body{
+    background-color: lightyellow;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+</body>
+<body><center>
+
+{% for table in tables %}
+            {{ table|safe }}
+{% endfor %}
+</center>
+</body>
+</html>
